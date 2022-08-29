@@ -5,7 +5,7 @@ This is my personal CS:GO configuration
 
 ## Installation ##
 
-Move the cfg files to C:\Program Files (x86)\Steam\userdata\*YOUR STEAM ID*\730\local\cfg 
+Move the cfg files to C:\Program Files (x86)\Steam\userdata\/*YOUR STEAM ID*\730\local\cfg 
 
 ### How do I find my SteamID ###
 
