@@ -1,0 +1,7 @@
+#context-printframe,                     /* Print Frame…             */
+#context-take-frame-screenshot,          /* Take Screenshot          */
+#context-take-frame-screenshot
+                       + menuseparator,     /******** Separator *********/
+#leave_this_dummy_here {
+  display: none !important;
+}

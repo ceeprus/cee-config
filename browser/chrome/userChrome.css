@@ -1,0 +1,50 @@
+/*AGENT_SHEET*/
+
+/************************************/
+/****** simpleMenuWizard START ******/
+
+/**********************************************
+   Modify these files themselves to your needs.
+   Do not modify the following @import block.
+   **********************************************/
+
+/*** When right-clicking on... ***/
+@import url("./simpleMenuWizard/blank-context.css");      /* ...a blank area on a webpage                    */
+@import url("./simpleMenuWizard/frame-context.css");      /* ...an iframe                                    */
+@import url("./simpleMenuWizard/image-context.css");      /* ...an image                                     */
+@import url("./simpleMenuWizard/input-context.css");      /* ...an input-field                               */
+@import url("./simpleMenuWizard/link-context.css");       /* ...a link                                       */
+@import url("./simpleMenuWizard/main-hamburger.css");     /* Leftclick the hamburger menu on top right       */
+@import url("./simpleMenuWizard/main-menubar.css");       /* Leftclick on main menubar (open with ALT key)   */
+@import url("./simpleMenuWizard/media-context.css");      /* ...media like audio or html5 video              */
+@import url("./simpleMenuWizard/select-context.css");     /* ...selected text or selected object             */
+@import url("./simpleMenuWizard/sidebar-context.css");    /* ...items in bookmarks- or history sidebar       */
+@import url("./simpleMenuWizard/sidebar-header.css");     /* Leftclick on sidebar header                     */
+@import url("./simpleMenuWizard/source-context.css");     /* ...a blank area when viewing source code        */
+@import url("./simpleMenuWizard/tab-context.css");        /* ...a tab                                        */
+@import url("./simpleMenuWizard/toolbar-context.css");    /* ...the toolbar or tabbar                        */
+@import url("./simpleMenuWizard/urlbar-context.css");     /* ...the addressbar                               */
+
+tooltip{-moz-appearance: none !important; background:#232323 !important; color: #ededed}
+
+/*** Hide all inactive menu items ***/
+/* #mainPopupSet menuitem[disabled="true"] { display: none !important; } */
+
+(function () {
+    var css = `
+    tooltip {
+        -moz-appearance: none!important;
+        background-color: rgb(15, 17, 34)!important;
+        color: rgba(255, 255, 255, 1)!important;
+        border: none!important;
+        padding: 5px!important;
+        font-family: FreeMono!important;
+    }
+    `;
+
+    var sss = Cc['@mozilla.org/content/style-sheet-service;1'].getService(Ci.nsIStyleSheetService);
+    var uri = makeURI('data:text/css;charset=UTF=8,' + encodeURIComponent(css));
+
+    sss.loadAndRegisterSheet(uri, sss.AGENT_SHEET);
+
+})();

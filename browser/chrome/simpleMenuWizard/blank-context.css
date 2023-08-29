@@ -1,0 +1,11 @@
+#context-navigation,
+#context-back,
+#context-forward,
+#context-reload,
+#context-stop,
+#context-sep-navigation,         /************** Separator ***************/
+#context-pocket,                 /* Save Page to Pocket                  */
+#context-take-screenshot,        /* Take Screenshot                      */
+#leave_this_dummy_here {
+  display: none !important;
+}
