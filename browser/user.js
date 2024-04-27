@@ -40,7 +40,6 @@ user_pref("media.cache_resume_threshold", 6000);
 user_pref("browser.cache.memory.max_entry_size", 153600);
 
 /** NETWORK ***/
-user_pref("network.buffer.cache.size", 262144);
 user_pref("network.buffer.cache.count", 128);
 user_pref("network.http.max-connections", 1800);
 user_pref("network.http.max-persistent-connections-per-server", 10);
@@ -50,7 +49,6 @@ user_pref("network.ssl_tokens_cache_capacity", 32768);
  * SECTION: SECUREFOX                                                       *
 ****************************************************************************/
 /** TRACKING PROTECTION ***/
-user_pref("browser.contentblocking.category", "strict");
 user_pref("privacy.trackingprotection.emailtracking.enabled", true);
 user_pref("urlclassifier.trackingSkipURLs", "*.reddit.com, *.twitter.com, *.twimg.com, *.tiktok.com");
 user_pref("urlclassifier.features.socialtracking.skipURLs", "*.instagram.com, *.twitter.com, *.twimg.com");
@@ -132,7 +130,7 @@ user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 
 /** MOZILLA ***/
 user_pref("accessibility.force_disabled", 1);
-user_pref("identity.fxaccounts.enabled", false);
+user_pref("identity.fxaccounts.enabled", true);
 user_pref("browser.tabs.firefox-view", false);
 user_pref("permissions.default.desktop-notification", 2);
 user_pref("permissions.default.geo", 2);
