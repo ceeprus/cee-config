@@ -1,5 +1,4 @@
-
-# Counter-Strike: Global Offensive #
+# PROBABY OBSOLETE
 
 This is my personal CS:GO configuration
 
