@@ -1,3 +1,3 @@
-# kret-config
+# cee-config
 
 Collection of configs
