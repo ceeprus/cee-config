@@ -1,0 +1,4 @@
+exec autoexec.cfg
+exec ahudcc_customization.cfg
+stuffcmds
+sv_unlockedchapters 99

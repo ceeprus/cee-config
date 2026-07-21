@@ -1,0 +1,88 @@
+bind B"cmd kill"
+bind Z +helpme
+cl_crosshaircolor 5
+cl_crosshair_red 255;cl_crosshair_green 231;cl_crosshair_blue 0;cl_crosshairalpha 143
+cl_crosshair_scale 16
+cl_crosshair_file""
+crosshair 1
+
+//Improved Crouch Jump Script
+alias +rj "spec_mode;-duck;+cr;alias checkrj +cr";
+alias -rj "-cr;checkduck;alias checkrj none";
+alias +crouch "-cr;+duck;alias checkduck +duck";
+alias -crouch "-duck;checkrj;alias checkduck none";
+alias checkduck none;
+alias checkrj none;
+alias +cr "+jump;+duck";
+alias -cr "-duck;-jump";
+alias none "";
+bind space +rj;
+bind ctrl +crouch;
+
+//my stuff
+tf_hud_target_id_disable_floating_health 0
+
+//viewmodel
+fov_desired 90
+viewmodel_fov 70
+tf_use_min_viewmodels 1
+
+//cl_interp
+cl_interp 0.0325
+cl_interp_ratio 1
+rate 97000
+cl_updaterate 66
+cl_cmdrate 66
+
+bind "s" "+back"
+bind "w" "+forward"
+bind "a" "+moveleft"
+bind "d" "+moveright"
+
+//Medic Autocall Radar
+alias +ac "incrementvar hud_medicautocallersthreshold 0 400 200"
+alias -ac "incrementvar hud_medicautocallersthreshold 0 400 -200"
+
+
+echo "      ▐█████████████████████████████████████████████████████████████████████  "
+echo "   ▄▄███████████████████████████████████████████████████████████████████████▄▄"
+echo "   ███████████████████████████████████████████████████████████████████████████"
+echo " ▐████████████████████████████████████████████████████████████████████████████"
+echo " ▐████████████████████████████████████████████████████████████████████████████"
+echo "▄█████████████████████████████████████████████████████████████████████████████"
+echo "█████████████████████████████████  ███████████████████████████████████████████"
+echo "████████████████  ███████████████   ▐▀████████████████████████████████████████"
+echo "████████████████   ▐█████████████      ▐██████████████████████████████████████"
+echo "██████████████▌     █████████████        ▐████████████████████████████████████"
+echo "██████████████▌     ▀████████████     ▄▄▄▐▀▀▀▀█████████████████████▀▀▀████████"
+echo "██████████████▌      ▐███████████                ▐████████████████     ▐██████"
+echo "██████████████████     ██████████                     ▐█████████████   ▐██████"
+echo "██████████████▌   ▀▀▀▀▀▀▀████████▄▄            ▄▄▄█████████████████▀█▌   █████"
+echo "█████████████            █████████▌          ▄████████████████████  █▌   █████"
+echo "█████████████             ▐███████▌        ██████████ ▐███████████     ▐██████"
+echo " ▐███████████  ▄▄▄▄       ▐▀██████▌       ▄▀▀████████  ███████████    ▄▐██████"
+echo " ▐███████████▄▄█████▄▄▄     ███████▄     ▐█ ▐██████▀  ▐███████████    ████████"
+echo " ▐████████████████ ▐████▌     ██████    █▒    ▐████  ▓████████████░ ████████░ "
+echo "   █████████████    ▀█████▄▄   ▐▀███▄▄  █               ▐▀████████▌▄██████▌   "
+echo "   █████████████     ▐██████      ▀███                    ███████████████▀    "
+echo "    ▐█████████████     █████        ▐██▄                  ███████████████     "
+echo "     ████████████▀▄      ▀▀▀          ▀▌▄                 ███████████▌ ▐▀     "
+echo "      ██████████▄▄░                                       ███████████▌        "
+echo "      ▐███████████                                        ███████████▌        "
+echo "        ███████████▌                                      ██████▌ ▐██▌        "
+echo "         ▀██████████▄                                     ██████▌  ▀██▄▄▄▄▄▄▄▄"
+echo "          ████▌ ▐████                                     ██████▌   █▌        "
+echo "           ▐██▌ ▐██████                                 ▐███████▌ ▐█          "
+echo "            ▀█▌   ██████▌                            ▄▄█▀▀█████  ▄▒           "
+echo "                  ██████▌                          ▐▄███  █████ ▐█            "
+echo "                    ████▌                         ████▌   █████ ▐█            "
+echo "                    ▀███▌                 ▄▄▄▄▄▄▀▀▀███▌   ███   ▐█            "
+echo "                     ▐██▌                            ██▄  ███   ▐█            "
+echo "                       █▌                            ███  █▌     █            "
+echo "                       ▐                               █  ▀       ▐█          "
+
+// Scoreboard: cursor + right-click context menu on players
+tf_scoreboard_mouse_mode 2
+
+// MSAA 2x - matches old working config; warpaint icon compositor renders black bands without it
+mat_antialias 2
