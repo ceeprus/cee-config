@@ -1,5 +1,5 @@
 "Resource/UI/MvMVictoryMannUpPanel.res"
-{
+{			
 	//Mouse over panel
 	"mouseoveritempanel"
 	{
@@ -15,13 +15,13 @@
 		"noitem_textcolor"		"117 107 94 255"
 		"PaintBackgroundType"	"2"
 		"paintborder"	"1"
-
+		
 		"text_ypos"			"0"
 		"text_center"		"1"
 		"model_hide"		"1"
 		"resize_to_text"	"1"
 		"padding_height"	"15"
-
+		
 		"attriblabel"
 		{
 			"font"			"ItemFontAttribLarge"
@@ -49,7 +49,7 @@
 		"ypos"			"372"
 		"zpos"			"100"
 		"wide"			"106"
-		"tall"			"20"
+		"tall"			"25"
 		"autoResize"	"0"
 		"visible"		"1"
 		"enabled"		"1"
@@ -62,8 +62,8 @@
 		"default"		"1"
 		"sound_depressed"	"UI/buttonclick.wav"
 		"sound_released"	"UI/buttonclickrelease.wav"
-
-		"image_drawcolor"	"ahudWhite"
+		
+		"image_drawcolor"	"235 226 202 255"
 		"Command"		"done"
 	}
 
@@ -79,6 +79,7 @@
 		"visible"		"1"
 	}
 
+
 	"OutterBackground"
 	{
 		"ControlName"	"Panel"
@@ -92,9 +93,9 @@
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-
+			
 		"PaintBackgroundType" "2"
-		"bgcolor_override"	"ahudDarkGrey"
+		"bgcolor_override"	"42 39 37 255"
 	}
 
 	"HeaderLine"
@@ -106,15 +107,15 @@
 		"zpos"			"2"
 		"wide"			"f0"
 		"tall"			"10"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"image"			"loadout_solid_line"
 		"scaleImage"	"1"
 
 		"pin_to_sibling"               "OutterBackground"
-		"pin_corner_to_sibling"        "2"
-		"pin_to_sibling_corner"        "0"
-	}
+		"pin_corner_to_sibling"        "2"          
+		"pin_to_sibling_corner"        "0"   
+	}	
 
 	"FooterLine"
 	{
@@ -125,15 +126,16 @@
 		"zpos"			"2"
 		"wide"			"f0"
 		"tall"			"10"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"image"			"loadout_solid_line"
 		"scaleImage"	"1"
 
 		"pin_to_sibling"               "OutterBackground"
-		"pin_corner_to_sibling"        "0"
-		"pin_to_sibling_corner"        "2"
-	}
+		"pin_corner_to_sibling"        "0"          
+		"pin_to_sibling_corner"        "2" 
+	}	
+	
 
 	"TabContainer"
 	{
@@ -145,7 +147,6 @@
 		"wide"			"399"
 		"tall"			"40"
 		"visible"		"1"
-		"proportionalToParent"	"1"
 
 		"PlayerTab1"
 		{
@@ -160,7 +161,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"		"0"
-			"bgcolor_override"	"ahudDarkGrey"
+			"bgcolor_override"	"42 41 39 255"
 			"PaintBackgroundType"	"2"
 			"proportionalToParent"	"1"
 		}
@@ -260,7 +261,7 @@
 			"proportionalToParent"	"1"
 		}
 	}
-
+		
 	"MainPanelContainer"
 	{
 		"ControlName"	"EditablePanel"
@@ -272,6 +273,8 @@
 		"tall"			"480"
 		"visible"		"1"
 
+
+			
 		"NoItemServerContainer"
 		{
 			"ControlName"	"EditablePanel"
@@ -281,7 +284,7 @@
 			"wide"			"530"
 			"tall"			"480"
 			"visible"		"1"
-
+			
 			"NoItemServerHeader"
 			{
 				"ControlName"	"CExLabel"
@@ -292,9 +295,9 @@
 				"xpos"			"0"
 				"ypos"			"100"
 				"wide"			"530"
-				"fgcolor"		"ahudWhite"
+				"fgcolor"		"tanlight"
 			}
-
+			
 			"NoItemServerMessage"
 			{
 				"ControlName"	"CExLabel"
@@ -307,7 +310,7 @@
 				"wide"			"530"
 				"tall"			"40"
 				"centerwrap"		"1"
-				"fgcolor"		"ahudWhite"
+				"fgcolor"		"tanlight"
 			}
 		}
 	}

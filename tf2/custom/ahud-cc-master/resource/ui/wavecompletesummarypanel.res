@@ -1,26 +1,26 @@
 "Resource/UI/WaveCompletePanel.res"
-{
+{		
 	"Background"
 	{
-		"ControlName"		"ImagePanel"
+		"ControlName"		"ScalableImagePanel"
 		"fieldName"		"Background"
 		"xpos"			"0"
 		"ypos"			"0"
 		"wide"			"250"
-		"tall"			"75"
+		"tall"			"80"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"fillcolor"		"HudBlack"
+		"image"			"../HUD/tournament_panel_brown"
 
 		"src_corner_height"	"22"				// pixels inside the image
 		"src_corner_width"	"22"
-
-		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"0"
+	
+		"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"5"	
 	}
-
+	
 	"WaveCompleteContainer"
 	{
 		"ControlName"	"EditablePanel"
@@ -28,13 +28,10 @@
 		"xpos"			"0"
 		"ypos"			"0"
 		"wide"			"250"
-		"tall"			"30"
+		"tall"			"35"
 		"visible"		"1"
-		"PaintBackgroundType" "0"
-		"paintborder"	"1"
-		"border"		"ahudDarkRedTeamBorder"
-		"bgcolor_override"	"ahudRed"
-
+		"PaintBackgroundType" "2"
+		
 		"WaveCompleteLabelShadow"
 		{
 			"ControlName"	"CExLabel"
@@ -42,20 +39,20 @@
 			"font"			"HudFontMediumSmallBold"
 			"textAlignment"	"center"
 			"labelText"		"%titletext%"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"250"
-			"tall"			"31"
+			"xpos"			"3"
+			"ypos"			"3"
+			"wide"			"245"
+			"tall"			"36"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"ShadowBlack"
-
+			"fgcolor"		"black"		
+			
 			// Red Background
-			"PaintBackgroundType" "0"
-			"fgcolor_override"	"ShadowBlack"
-			"bgcolor_override"	"0 0 0 0"
+			"PaintBackgroundType" "2"
+			"fgcolor_override"	"black"		
+			"bgcolor_override"	"190 60 60 225"
 		}
-
+		
 		"WaveCompleteLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -64,136 +61,136 @@
 			"textAlignment"	"center"
 			"labelText"		"%titletext%"
 			"xpos"			"2"
-			"ypos"			"-1"
+			"ypos"			"2"
 			"wide"			"244"
-			"tall"			"30"
+			"tall"			"35"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"		"ahudWhite"
+			"fgcolor"		"tanlight"		
 		}
 	}
-
+		
 	"CreditContainer"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CreditContainer"
 		"xpos"			"0"
-		"ypos"			"28"
+		"ypos"			"30"
 		"wide"			"400"
 		"tall"			"400"
 		"autoResize"	"1"
 		"visible"		"1"
-
+		
 		"CreditCollectedTextLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CreditCollectedTextLabel"
-			"font"			"aRegular12"
+			"font"			"HudFontSmallest"
 			"labelText"		"#TF_PVE_CurrencyCollected"
 			"textAlignment" "north-east"
 			"xpos"			"0"
-			"ypos"			"5"
+			"ypos"			"9"
 			"wide"			"105"
 			"tall"			"20"
-			"fgcolor"		"ahudWhite"
+			"fgcolor"		"tanlight"
 		}
-
+		
 		"CreditCollectedCountLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CreditCollectedCountLabel"
-			"font"			"aRegular12"
+			"font"			"HudFontSmallest"
 			"labelText"		"%creditscollected%"
 			"textAlignment" "north-east"
 			"xpos"			"115"
-			"ypos"			"5"
+			"ypos"			"9"
 			"wide"			"30"
 			"tall"			"20"
 			"fgcolor"		"CreditsGreen"
 		}
-
+		
 		"CreditMissedTextLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CreditMissedTextLabel"
-			"font"			"aRegular12"
+			"font"			"HudFontSmallest"
 			"labelText"		"#TF_PVE_Missed"
 			"textAlignment" "north-east"
 			"xpos"			"0"
-			"ypos"			"17"
+			"ypos"			"21"
 			"wide"			"105"
 			"tall"			"20"
-			"fgcolor"		"ahudWhite"
+			"fgcolor"		"tanlight"
 		}
-
+		
 		"CreditMissedCountLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CreditMissedCountLabel"
-			"font"			"aRegular12"
+			"font"			"HudFontSmallest"
 			"labelText"		"%creditsmissed%"
 			"textAlignment" "north-east"
 			"xpos"			"115"
-			"ypos"			"17"
+			"ypos"			"21"
 			"wide"			"30"
 			"tall"			"20"
 			"fgcolor"		"RedSolid"
 		}
-
+		
 		"CreditBonusTextLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CreditBonusTextLabel"
-			"font"			"aRegular12"
+			"font"			"HudFontSmallest"
 			"labelText"		"#TF_PVE_Bonus"
 			"textAlignment" "north-east"
 			"xpos"			"0"
-			"ypos"			"29"
+			"ypos"			"33"
 			"wide"			"105"
 			"tall"			"20"
-			"fgcolor"		"ahudWhite"
+			"fgcolor"		"tanlight"
 		}
-
+		
 		"CreditBonusCountLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"CreditBonusCountLabel"
-			"font"			"aRegular12"
+			"font"			"HudFontSmallest"
 			"labelText"		"%creditbonus%"
 			"textAlignment" "north-east"
 			"xpos"			"115"
-			"ypos"			"29"
+			"ypos"			"33"
 			"wide"			"30"
 			"tall"			"20"
 			"fgcolor"		"CreditsGreen"
 		}
 	}
-
+	
 	"RatingContainer"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"RatingContainer"
 		"xpos"			"140"
-		"ypos"			"25"
+		"ypos"			"30"
 		"wide"			"400"
 		"tall"			"400"
 		"autoResize"	"1"
 		"visible"		"1"
-
+		
 		"RatingLabel"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"RatingLabel"
-			"font"			"aRegular12"
+			"font"			"HudFontSmall"
 			"labelText"		"%ratinglabel%"
 			"textAlignment" "center"
 			"xpos"			"0"
 			"ypos"			"5"
 			"wide"			"115"
 			"tall"			"20"
-			"fgcolor"		"ahudWhite"
+			"fgcolor"		"tanlight"
 		}
-
+		
 		"RatingTextShadow"
 		{
 			"ControlName"	"CExLabel"
@@ -205,9 +202,9 @@
 			"ypos"			"20"
 			"wide"			"115"
 			"tall"			"30"
-			"fgcolor"		"ShadowBlack"
+			"fgcolor"		"Black"
 		}
-
+		
 		"RatingText"
 		{
 			"ControlName"	"CExLabel"
@@ -219,7 +216,7 @@
 			"ypos"			"19"
 			"wide"			"115"
 			"tall"			"30"
-			"fgcolor"		"ahudWhite"
+			"fgcolor"		"White"
 		}
 	}
 
@@ -228,7 +225,7 @@
 		"ControlName"	"ScalableImagePanel"
 		"fieldName"		"RespecBackground"
 		"xpos"			"0"
-		"ypos"			"75"
+		"ypos"			"80"
 		"wide"			"250"
 		"tall"			"25"
 		"autoResize"	"0"
@@ -239,9 +236,9 @@
 
 		"src_corner_height"	"22"				// pixels inside the image
 		"src_corner_width"	"22"
-
-		"draw_corner_width"	"0"				// screen size of the corners ( and sides ), proportional
-		"draw_corner_height" 	"0"
+	
+		"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"5"	
 	}
 
 	"RespecContainer"
@@ -249,12 +246,12 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"RespecContainer"
 		"xpos"			"0"
-		"ypos"			"75"
+		"ypos"			"80"
 		"wide"			"250"
 		"tall"			"25"
 		"visible"		"1"
-		"PaintBackgroundType" "0"
-
+		"PaintBackgroundType" "2"
+	
 		"RespecTextLabelWin"
 		{
 			"ControlName"	"CExLabel"
@@ -266,9 +263,9 @@
 			"ypos"			"3"
 			"wide"			"160"
 			"tall"			"20"
-			"fgcolor"		"ahudWhite"
+			"fgcolor"		"tanlight"
 		}
-
+		
 		"RespecCountLabel"
 		{
 			"ControlName"	"CExLabel"

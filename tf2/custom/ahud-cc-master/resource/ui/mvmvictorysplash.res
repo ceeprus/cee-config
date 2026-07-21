@@ -1,5 +1,5 @@
 "Resource/UI/MvMVictoryPanel.res"
-{
+{	
 	"SplashContainer"
 	{
 		"ControlName"	"EditablePanel"
@@ -9,22 +9,22 @@
 		"wide"			"300"
 		"tall"			"300"
 		"visible"		"1"
-
+		
 		"SplashBackground"
 		{
-			"ControlName"		"ImagePanel"
+			"ControlName"		"ScalableImagePanel"
 			"fieldName"		"SplashBackground"
 			"xpos"			"25"
-			"ypos"			"16"
+			"ypos"			"0"
 			"wide"			"250"
-			"tall"			"42"
+			"tall"			"70"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fillcolor"		"ahudRed"
+			"image"			"../hud/ammo_red_bg"
 		}
-
+		
 		"SplashLabelShadow"
 		{
 			"ControlName"	"CExLabel"
@@ -36,9 +36,9 @@
 			"ypos"			"14"
 			"wide"			"300"
 			"tall"			"50"
-			"fgcolor"		"ShadowBlack"
+			"fgcolor"		"black"
 		}
-
+		
 		"SplashLabel"
 		{
 			"ControlName"	"CExLabel"
@@ -50,7 +50,7 @@
 			"ypos"			"12"
 			"wide"			"300"
 			"tall"			"50"
-			"fgcolor"		"ahudWhite"
+			"fgcolor"		"tanlight"
 		}
 	}
 }
